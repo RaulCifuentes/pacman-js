@@ -955,18 +955,19 @@ class GameCoordinator {
    * @param {Number} remainingDots
    * @returns {String}
    */
-  determineSiren(remainingDots) {
-    let sirenNum;
-
-    if (remainingDots > 40) {
-      sirenNum = 1;
-    } else if (remainingDots > 20) {
-      sirenNum = 2;
-    } else {
-      sirenNum = 3;
-    }
-
-    return `siren_${sirenNum}`;
+  determineSiren() {
+    return 'none';
+    // let sirenNum;
+    //
+    // if (remainingDots > 40) {
+    //   sirenNum = 1;
+    // } else if (remainingDots > 20) {
+    //   sirenNum = 2;
+    // } else {
+    //   sirenNum = 3;
+    // }
+    //
+    // return `siren_${sirenNum}`;
   }
 
   /**
